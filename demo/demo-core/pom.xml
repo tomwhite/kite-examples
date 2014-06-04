@@ -20,7 +20,9 @@
 
   <modelVersion>4.0.0</modelVersion>
 
+  <groupId>org.kitesdk.examples</groupId>
   <artifactId>demo-core</artifactId>
+  <version>0.14.2-SNAPSHOT</version>
 
   <parent>
     <groupId>org.kitesdk.examples</groupId>
@@ -54,13 +56,5 @@
       </plugin>
     </plugins>
   </build>
-
-  <dependencies>
-    <dependency>
-      <groupId>org.kitesdk</groupId>
-      <artifactId>kite-data-core</artifactId>
-      <version>${kite-version}</version>
-    </dependency>
-  </dependencies>
 
 </project>
