@@ -54,7 +54,7 @@
     <dependency>
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
-      <version>${hadoop.log4j.version}}</version>
+      <version>${hadoop.log4j.version}</version>
     </dependency>
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -75,16 +75,5 @@
       <scope>compile</scope> <!-- app acts as a Hadoop container -->
     </dependency>
   </dependencies>
-
-  <repositories>
-    <repository>
-      <id>cdh.repo</id>
-      <url>https://repository.cloudera.com/artifactory/cloudera-repos</url>
-      <name>Cloudera Repositories</name>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </repository>
-  </repositories>
 
 </project>
