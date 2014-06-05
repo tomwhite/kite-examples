@@ -39,20 +39,6 @@
       <plugin>
         <groupId>org.apache.avro</groupId>
         <artifactId>avro-maven-plugin</artifactId>
-        <version>1.7.5</version>
-        <configuration>
-          <stringType>String</stringType>
-          <createSetters>false</createSetters>
-          <fieldVisibility>private</fieldVisibility>
-        </configuration>
-        <executions>
-          <execution>
-            <phase>generate-sources</phase>
-            <goals>
-              <goal>schema</goal>
-            </goals>
-          </execution>
-        </executions>
       </plugin>
     </plugins>
   </build>
