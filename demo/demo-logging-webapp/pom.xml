@@ -59,7 +59,7 @@
       <artifactId>kite-hadoop-dependencies</artifactId>
       <version>${kite.version}</version>
       <type>pom</type>
-      <scope>compile</scope> <!-- webapp acts as a Hadoop container -->
+      <scope>compile</scope> <!-- provide Hadoop dependencies -->
     </dependency>
     <dependency>
       <groupId>javax</groupId>

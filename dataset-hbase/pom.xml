@@ -82,14 +82,14 @@
       <artifactId>kite-hadoop-dependencies</artifactId>
       <version>${kite.version}</version>
       <type>pom</type>
-      <scope>compile</scope> <!-- app acts as a Hadoop container -->
+      <scope>compile</scope> <!-- provide Hadoop dependencies -->
     </dependency>
     <dependency>
       <groupId>org.kitesdk</groupId>
       <artifactId>kite-hbase-dependencies</artifactId>
       <version>${kite.version}</version>
       <type>pom</type>
-      <scope>compile</scope> <!-- app acts as a Hadoop container -->
+      <scope>compile</scope> <!-- provide HBase dependencies -->
     </dependency>
   </dependencies>
 

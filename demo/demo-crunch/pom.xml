@@ -76,7 +76,7 @@
       <groupId>org.apache.hive</groupId>
       <artifactId>hive-exec</artifactId>
       <version>${kite.hive.version}</version>
-      <scope>compile</scope> <!-- app acts as a Hadoop container -->
+      <scope>compile</scope> <!-- provide Hive dependencies -->
     </dependency>
 
   </dependencies>
