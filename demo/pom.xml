@@ -44,6 +44,10 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.tomcat.port>8034</maven.tomcat.port>
+    <hdfs.host>localhost.localdomain</hdfs.host>
+    <fs.defaultFS>hdfs://${hdfs.host}</fs.defaultFS>
+    <hive.metastore.host>localhost</hive.metastore.host>
+    <flume.host>localhost</flume.host>
   </properties>
 
   <repositories>
@@ -55,6 +59,12 @@
   </repositories>
 
   <build>
+    <resources>
+      <resource>
+        <directory>src/main/resources</directory>
+        <filtering>true</filtering>
+      </resource>
+    </resources>
     <plugins>
       <plugin>
         <groupId>org.kitesdk</groupId>
@@ -63,11 +73,11 @@
           <hadoopConfiguration>
             <property>
               <name>fs.default.name</name>
-              <value>hdfs://localhost.localdomain:8020</value>
+              <value>${fs.defaultFS}</value>
             </property>
             <property>
               <name>hive.metastore.uris</name>
-              <value>thrift://localhost:9083</value>
+              <value>thrift://${hive.metastore.host}:9083</value>
             </property>
           </hadoopConfiguration>
         </configuration>
